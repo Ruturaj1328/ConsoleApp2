@@ -168,15 +168,97 @@ internal class Problem
 {
     static void Main(string[] args)
     {
-        int num, r, reverse = 0;
-        Console.WriteLine("Enter number1");
-        num = Convert.ToInt32(Console.ReadLine());
-        while (num > 0) //123 ,12,1
+        int i, j,c;
+        for (i=1; i<=5;i++)
         {
-            r = num % 10; //3,2,
-            reverse = reverse*10 + r;  //320+1=321
-            num = num / 10; //123//12
+            for (j = 1; j <= i; j++)
+            {
+                
+              Console.Write($"*");
+                
+            }
+            Console.WriteLine();
+
         }
-        Console.WriteLine($"{reverse}");
+    }
+}
+internal class Problem1
+{
+    static void Main(string[] args)
+    {
+
+        int i, j;
+        for (i = 1; i <=5; i++)
+        {
+            for (j = 1; j <= i; j++)
+            {
+
+                Console.Write($"{j}");
+
+            }
+            Console.WriteLine();
+
+        }
+    }
+}
+
+internal class Problem2
+{
+    static void Main(string[] args)
+    {
+        int i, j;
+        for (i = 5; i >=1; i--)
+        {
+            for (j = 1; j <= i; j++)
+            {
+
+                Console.Write($"{j}");
+
+            }
+            Console.WriteLine();
+        }
+
+
+
+    } 
+    
+}
+internal class Problem3
+{
+    static void Main(string[] args)
+    {
+        int i, j;
+        for (i = 1; i <= 5; i++)
+        {
+            for (j = 5; j >= i; j--)
+            {
+
+                Console.Write($"{j}");
+
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+internal class Problem4
+{
+    static void Main(string[] args)
+    {
+        int i, j,c;
+        for (i = 1; i <= 4; i++)
+        {
+            for (j = 1; j <=4-i; j++)
+            {
+                Console.Write(" ");
+            }
+            for (c = 1; c <=i; c++)
+            { 
+
+                Console.Write("*");
+             
+            }
+            Console.WriteLine();
+        }
     }
 }
