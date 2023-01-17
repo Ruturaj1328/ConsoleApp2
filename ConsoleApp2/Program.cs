@@ -165,7 +165,7 @@ internal class Example
     
 }
 internal class Problem
-{
+{                             // star pattern
     static void Main(string[] args)
     {
         int i, j,c;
